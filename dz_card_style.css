@@ -1,0 +1,53 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s; /* Добавлен переход для background-color */
+    width: 300px;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #add8e6; /* Голубой цвет при наведении */
+}
+
+.card .photo img {
+    width: 200px !important;
+    height: 200px !important;
+    object-fit: cover !important;
+}
+
+.card .info {
+    padding: 20px;
+}
+
+.card .info h1 {
+    margin-top: 0;
+    font-size: 1.5em;
+}
+
+.card .info p {
+    margin: 5px 0;
+    color: #555;
+}
